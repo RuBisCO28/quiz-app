@@ -2,6 +2,8 @@ const question = document.querySelector('#question');
 const progreeText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progreeBarFull = document.querySelector('#progreeBarFull');
+const check = document.getElementById('check');
+const next = document.getElementById('next');
 
 let currentQuestion = {};
 let acceptAnswers = true;
@@ -65,3 +67,11 @@ incrementScore = num => {
 }
 
 startGame();
+
+check.addEventListener('click', () => {
+    checkAnswer();
+})
+
+next.addEventListener('click', () => {
+    nextQuestion();
+})

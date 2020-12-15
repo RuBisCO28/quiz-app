@@ -2,40 +2,6 @@ body {
     color: #777e8c;
 }
 
-.choice-container {
-    display: flex;
-    margin-bottom: 0.8rem;
-    width: 100%;
-    border-radius: 4px;
-    background: #66ccff;
-    font-size: 3rem;
-    min-width: 80rem;
-}
-
-.choice-container:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-    transform: transform 100ms;
-}
-
-.choice-prefix {
-    padding: 2rem 2.5rem;
-    color: white;
-}
-
-.choice-text {
-    padding: 2rem;
-    width: 100%;
-}
-
-.correct {
-    background: linear-gradient(32deg, rgba(17, 97, 17) 0%, rgba(127, 209, 127) 100%)
-}
-
-.incorrect {
-    background: linear-gradient(32deg, rgba(199, 36, 36, 1) 0%, rgba(211, 102, 102, 1) 100%)
-}
-
 /* Heads up Display*/
 #hud {
     display: flex;
@@ -98,6 +64,24 @@ body {
     text-align: center;
     color: rgb(28,26,26);
     margin-bottom: 3rem;
+}
+
+.hbtn {
+    color: #fff;
+    font-size: 2.0rem;
+    width: 20rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    background: #00aaff;
+    box-shadow: 0 4px #0088cc;
+    cursor: pointer;
+}
+
+.hbtn:hover {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
